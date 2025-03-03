@@ -1,0 +1,44 @@
+.footer {
+    background-color: RGB(116, 19, 220);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around; /* Even spacing between sections */
+    align-items: center; /* Vertically align text */
+    flex-wrap: wrap; /* Wrap items if needed */
+}
+
+.footer div {
+    flex: 1; /* Makes each section take equal space */
+    text-align: center; /* Ensures text inside each section is centered */
+}
+
+
+.footer h2 {
+    margin-bottom: 15px; /* Space below the heading */
+    font-weight: 700;
+}
+
+.footer p {
+    margin: 5px 0;
+    font-weight: 600;
+}
+
+.footer h4 {
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.extra {
+    font-weight: 700;
+}
+
+
+.footer a {
+    color: white;
+    font-weight: 600;
+}

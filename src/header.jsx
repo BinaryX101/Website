@@ -1,46 +1,25 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './header.css';
-
 
 const Header = () => {
   return (
-    <header style={styles.header}>
-      <div className="title">
-        <h1>My MASSIVE, yeah, i mean MASSIVE website</h1>
+    <header className='header'>
+      <div>
+        <Link to="/Website">
+          <img src="./Logo.png" alt="Website Logo" className="logo-image" />
+        </Link>
       </div>
-      <nav style={styles.nav}>
-        <a href="#about" style={styles.link}>Absolutly</a>
-        <a href="#projects" style={styles.link}>MASSIVE</a>
-        <a href="#contact" style={styles.link}>website</a>
+      <nav className="nav">
+        <Link to="/Website" className="link">Home</Link>
+        <Link to="/Website/activities" className="link">Activities</Link>
+        <Link to="/Website/about-us" className="link">About</Link>
+        <Link to="/Website/map" className="link">Map</Link>
+        <Link to="/Website/contact" className="link">Contact</Link>
       </nav>
     </header>
   );
-};
-
-const styles = {
-  header: {
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    padding: '1rem 2rem',
-    backgroundColor: '#282c34',
-    color: 'white',
-  },
-  logo: {
-    fontSize: '1.5rem',
-    fontWeight: 'bold',
-  },
-  nav: {
-    display: 'flex',
-    gap: '1rem',
-  },
-  link: {
-    textDecoration: 'none',
-    color: 'white',
-    fontWeight: 'bold',
-    transition: 'color 0.3s',
-  },
 };
 
 export default Header;
