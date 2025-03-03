@@ -1,6 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Header from "./header";
 import Footer from "./footer";
 import Home from "./pages/home";
@@ -11,7 +11,7 @@ import "./app.css";
 
 function App() {
   return (
-    <Router>
+    <>
       <Header />
       {/* Add margin-top to prevent text from hiding under the header */}
       <main style={{ marginTop: "120px", padding: "1rem", textAlign: "left", backgroundColor: "white" }}>
@@ -23,7 +23,7 @@ function App() {
         </Routes>
       </main>
       <Footer />
-    </Router>
+    </>
   );
 }
 
