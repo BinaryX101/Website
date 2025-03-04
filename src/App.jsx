@@ -13,7 +13,6 @@ function App() {
   return (
     <>
       <Header />
-      {/* Add margin-top to prevent text from hiding under the header */}
       <main style={{ marginTop: "120px", padding: "1rem", textAlign: "left", backgroundColor: "white" }}>
         <Routes>
           <Route path="/Website/" element={<Home />} />
@@ -26,5 +25,6 @@ function App() {
     </>
   );
 }
+
 
 export default App;
