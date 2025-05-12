@@ -1,6 +1,6 @@
 .footer {
-    background-color: RGB(116, 19, 220);
-    color: white;
+    background-color: black;
+    color: rgb(255, 255, 255);
     text-align: center;
     padding: 15px;
     width: 100%;

@@ -12,13 +12,16 @@ const Footer = () => {
         </div>
         <div className='Useful-Links'>
             <h2>Useful links</h2>
-            <a href="https://www.scouts.org.uk" target="_blank" rel="noopener noreferrer">» National Website</a><br></br>
-            <a href="https://shop.scouts.org.uk" target="_blank" rel="noopener noreferrer">» Scout Shop</a>
+            <a href="http://localhost:5173/Website/" target="_blank" rel="noopener noreferrer">» Example link 1</a><br></br>
+            <a href="http://localhost:5173/Website/" target="_blank" rel="noopener noreferrer">» Example Link 2</a>
         </div>
         <div className='extra'>
-            <h2>extra</h2>
+            <h2>Extra</h2>
+            <p>Extra information 1</p>
+            <p>Extra information 2</p>
         </div>
-        <h4>&copy; {new Date().getFullYear()} 2nd Didcot Methodist Scouts. All rights reserved.</h4>
+
+        <h4>&copy; {new Date().getFullYear()} Your name/business. All rights reserved.</h4>
     </footer>
   );
 };

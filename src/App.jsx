@@ -1,12 +1,14 @@
-// eslint-disable-next-line no-unused-vars
+/* eslint-disable no-unused-vars */
+// App.jsx
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Header from "./header";
 import Footer from "./footer";
 import Home from "./pages/home";
-import Activities from "./pages/activities";
-import AboutUs from "./pages/AboutUs";
-import Map from "./pages/Map";
+import Portfolio from "./pages/portfolio";
+import AboutMe from "./pages/AboutMe";
+import Contact from "./pages/contact";
+import NotFound from "./pages/NotFound"; // make sure this exists
 import "./app.css";
 
 function App() {
@@ -15,16 +17,16 @@ function App() {
       <Header />
       <main style={{ marginTop: "120px", padding: "1rem", textAlign: "left", backgroundColor: "white" }}>
         <Routes>
-          <Route path="/Website/" element={<Home />} />
-          <Route path="/Website/activities" element={<Activities />} />
-          <Route path="/Website/about-us" element={<AboutUs />} />
-          <Route path="/Website/map" element={<Map />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/about-us" element={<AboutMe />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
       <Footer />
     </>
   );
 }
-
 
 export default App;

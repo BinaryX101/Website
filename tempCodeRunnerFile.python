@@ -1,0 +1,11 @@
+balance = 0
+passthrough = 0
+while passthrough == 0:
+    password = input("Please enter your new password: ")
+    passwordconfirm = input("Please Re-enter your new password to confirm: ")
+    if password == passwordconfirm:
+        passthrough = 1
+        print("Password Confirmed.")
+    else:
+        print("Passwords do not match, please try again. \n")
+print("You have now been logged in.")

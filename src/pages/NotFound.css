@@ -1,0 +1,11 @@
+  .error-img {
+    width: 650px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 65px;
+  }
+
+  .text {
+    text-align: center;
+  }

@@ -1,7 +1,8 @@
 const Home = () => {
     return(
         <div>
-            <img src="/Website/Logo.png" alt="W"/>
+            <h1>Home page</h1>
+             
         </div>
     );
   };
