@@ -1,6 +1,6 @@
 .footer {
-    background-color: black;
-    color: rgb(255, 255, 255);
+    background-color: #FFEBD0;
+    color: rgb(0, 0, 0);
     text-align: center;
     padding: 15px;
     width: 100%;
@@ -17,13 +17,25 @@
 
 
 .footer h2 {
-    margin-bottom: 15px; /* Space below the heading */
-    font-weight: 700;
+    width: 8000px;
+    margin-bottom: 20px; /* Space below the heading */
+    font-weight: 900;
 }
 
-.footer p {
+.footer a {
     margin: 5px 0;
-    font-weight: 600;
+    font-size: 18px;
+    background-color: RGB(0, 156, 156);
+    border-radius: 8px;
+    width: 100px;
+    color: white;
+    font-weight: 800;
+    padding: 1rem 1rem;
+}
+
+.footer a:hover {
+    color: white;
+    background-color: #005b5b;
 }
 
 .footer h4 {
@@ -33,12 +45,4 @@
     margin-top: 10px;
 }
 
-.extra {
-    font-weight: 700;
-}
 
-
-.footer a {
-    color: white;
-    font-weight: 600;
-}

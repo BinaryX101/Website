@@ -1,0 +1,71 @@
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 470px); /* 3 fixed-width columns */
+  gap: 2rem 7rem; /* vertical gap: 2rem, horizontal gap: 1rem */
+  justify-content: center; /* center the whole grid */
+  padding: 1rem;
+}
+
+.title {
+  padding-left: 110px;
+  font-weight: 900;
+  font-size: 55px;
+}
+
+.subtitle {
+  padding-left: 110px;
+}
+
+/* Card styling (already mostly good) */
+.card-button {
+  display: block;
+  width: 100%;
+  max-width: 500px;       /* keep cards from being too wide */
+  margin: 0 auto;          /* center within each column */
+  background-color: #009C9C;
+  color: #ffffff;
+  padding: 2rem;
+  border-radius: 15px;
+  text-decoration: none;
+  text-align: center;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+
+
+.card-button:hover {
+  transform: translateY(-5px);
+  box-shadow: 1px 8px 8px rgba(0, 0, 0, 0.15);
+  color: white;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin: 0;
+}
+
+.card-subtitle {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-top: 1.4rem;
+  color: rgb(255, 255, 255);
+}
+
+.card-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.card-icon-image {
+  width: 90px;
+  height: 60px;
+  margin: 0 auto 1rem;
+  object-fit: contain;
+}

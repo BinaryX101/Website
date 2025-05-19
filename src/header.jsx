@@ -1,21 +1,22 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './header.css';
 
 const Header = () => {
   return (
     <header className='header'>
       <div>
-      <Link to="/">
+      <NavLink to="/">
           <img src="./Logo.png" alt="Website Logo" className="logo-image" />
-        </Link>
+        </NavLink>
       </div>
+      <h1 className='line'>|</h1>
       <nav className="nav">
-        <Link to="/" className="link">Home</Link>
-        <Link to="/portfolio" className="link">Portfolio</Link>
-        <Link to="/about-us" className="link">About Me</Link>
-        <Link to="/contact" className="link">Contact</Link>
+        <NavLink to="/" className={({ isActive }) => isActive ? 'link active' : 'link'}>Home</NavLink>
+        <NavLink to="/projects" className={({ isActive }) => isActive ? 'link active' : 'link'}>Projects</NavLink>
+        <NavLink to="/services" className={({ isActive }) => isActive ? 'link active' : 'link'}>Services</NavLink>
+        <NavLink to="/contact" className={({ isActive }) => isActive ? 'link active' : 'link'}>Contact</NavLink>
       </nav>
     </header>
   );

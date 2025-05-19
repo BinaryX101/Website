@@ -1,0 +1,119 @@
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+}
+
+.titlediv {
+  padding: 0; /* reduce if too large */
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 600px;
+  margin-right: 1100px;
+}
+
+.SideTitle {
+  font-size: 90px;
+  line-height: 1;
+  margin: 0;
+  animation: fadeSlideIn 2s ease forwards;
+}
+
+
+.contactContent.verticalLayout {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.contactside {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centers children horizontally */
+  gap: 1rem;
+  font-size: 20px;
+  padding: 1rem;
+  flex: 1;
+  width: 100%;
+  max-width: none;
+  padding-right: 260px;
+}
+
+.subtitle {
+  font-size: 40px;
+  font-weight: 900;
+  text-align: center;
+  width: 100%;
+}
+
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background-color: #48a9c5;
+  padding: 3rem;
+  border-radius: 1.5rem;
+  width: 100%;
+  max-width: 500px;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.contactForm label {
+  font-weight: 600;
+}
+
+.contactForm input,
+.contactForm textarea {
+  background-color: #222e84;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  color: white;
+  font-size: 1.1rem;
+}
+
+.contactForm input::placeholder,
+.contactForm textarea::placeholder {
+  color: #ccc;
+}
+
+.contactForm textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.contactForm button {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contactForm button:hover {
+  background-color: #eee;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: red;
+}

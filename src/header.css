@@ -3,9 +3,9 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 80px; /* Ensure this matches your header height */
-  background-color: #ffffff;
-  padding: 1.4rem 2rem;
+  height: 70px; /* Ensure this matches your header height */
+  background-color: rgb(255, 255, 255);
+  padding: 1.4rem 0rem;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adds shadow */
   z-index: 1000; /* Ensures header stays above other elements */
   display: flex;
@@ -18,34 +18,94 @@
     padding-top: 0px;  /* Add padding at the top of the page so content doesn't hide behind the fixed header */
   }
 
-  .DumbAssImage {
-    width: 180px;
-  }
-
   
   header .logo {
     font-size: 10px;
   }
 
+  @keyframes Fadein {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 
   .logo-image {
-    width: 170px;
-    
+    animation: Fadein 1.5s ease-in;
+    width: 220px;
+    padding-left: 36rem;
   }
 
   header nav {
     display: flex;
+    align-items: center;
     gap: 0px;
     font-size: 20px;
+    padding-right: 500px;
   }
 
+  .line {
+  opacity: 0;
+  transform: translateY(-10px);
+  animation: fadeSlideIn 0.8s ease forwards;
+  animation-delay: 0.8s; /* After all buttons */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 60px;
+  color: rgb(211, 211, 211);
+  padding-bottom: 20px;
+  font-weight: 100;
 
+}
+
+
+
+  @keyframes fadeSlideIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Base style for nav links */
   .link {
-    color: rgb(133, 133, 133);
-    font-size: 20px;
-    padding-bottom: 2px;
-    padding-right: 4rem;
+  opacity: 0;
+  animation: fadeSlideIn 0.6s ease forwards;
+  animation-fill-mode: forwards;
+  color: black;
+  font-size: 20px;
+  padding: 0.4rem 1rem;
+  margin-right: 2rem;
+  text-align: center;
+  font-weight: 650;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
   }
+
+
+  /* Stagger the delay */
+  .link:nth-child(1) {
+    animation-delay: 0.1s;
+  }
+  .link:nth-child(2) {
+    animation-delay: 0.3s;
+  }
+  .link:nth-child(3) {
+    animation-delay: 0.5s;
+  }
+  .link:nth-child(4) {
+    animation-delay: 0.7s;
+  }
+
+
   
   header nav a {
     text-decoration: none;
@@ -56,9 +116,14 @@
   }
   
   header nav a:hover {
-    color: black;
+    color: rgb(101, 101, 101);
   }
 
-  
-  
-  
+  .link.active {
+  background-color: rgb(0, 156, 156);
+  color: white;
+  border-radius: 50px;
+}
+
+
+

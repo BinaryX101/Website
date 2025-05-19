@@ -1,0 +1,36 @@
+.title {
+    font-size: 60px;
+    line-height: 80px;
+}
+
+.titlename {
+    color: #0091ca;
+    font-size: 50px;
+    position: relative;
+    display: inline-block;
+}
+
+.titlename:hover {
+    color: #0091ca;
+    text-decoration: none;
+}
+
+.titlename::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    height: 5px;
+    width: 0;
+    background-color: #0091ca;
+    animation: underlineGrow 1.2s ease forwards;
+}
+
+@keyframes underlineGrow {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
