@@ -17,7 +17,8 @@ const Contact = () => {
           <p className="info">GitHub: <a href="https://github.com/BinaryX101">BinaryX101</a></p>
         </div>
 
-        <form className="contactForm">
+        <form className="contactForm"> {/*Need to move this upwards a bit to line up with the title*/} 
+          <h2>Not Currently Working Please Ignore</h2>
           <label>Name</label>
           <input type="text" placeholder="e.g. John Smith" required />
 
@@ -25,9 +26,9 @@ const Contact = () => {
           <input type="email" placeholder="e.g. example@gmail.com" required />
 
           <label>Message</label>
-          <textarea placeholder="Let me know what you need" required></textarea>
+          <textarea placeholder="Let me know what you need" required></textarea> 
 
-          <button type="submit">Send message</button>
+          <button type="submit">Send message</button> {/*doesnt even do anything yet*/}
         </form>
       </div>
     </div>

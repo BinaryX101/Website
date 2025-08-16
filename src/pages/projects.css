@@ -6,14 +6,14 @@
   padding: 1rem;
 }
 
-.title {
-  padding-left: 110px;
+.titles {
+  padding-left: 51rem;
   font-weight: 900;
   font-size: 55px;
 }
 
 .subtitle {
-  padding-left: 110px;
+  padding-left: 2rem;
 }
 
 /* Card styling (already mostly good) */

@@ -8,7 +8,7 @@ import Home from "./pages/home";
 import Projects from "./pages/projects";
 import Services from "./pages/services";
 import Contact from "./pages/contact";
-import NotFound from "./pages/NotFound"; // make sure this exists
+import NotFound from "./pages/NotFound"; 
 import "./app.css";
 
 function App() {

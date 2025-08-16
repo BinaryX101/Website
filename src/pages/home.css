@@ -1,6 +1,9 @@
 .title {
+    opacity: 0;
+    animation: fadeSlideIn 1.2s ease forwards;
     font-size: 60px;
     line-height: 80px;
+    padding-left: 3rem;
 }
 
 .titlename {
@@ -24,6 +27,7 @@
     width: 0;
     background-color: #0091ca;
     animation: underlineGrow 1.2s ease forwards;
+    animation-delay: 0.2s;
 }
 
 @keyframes underlineGrow {
@@ -34,3 +38,14 @@
         width: 100%;
     }
 }
+
+@keyframes fadeSlideIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

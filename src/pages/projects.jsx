@@ -20,7 +20,7 @@ const projectList = [
 const Projects = () => {
   return (
     <div>
-      <h1 className="title">My Projects</h1>
+      <h1 className="titles">My Projects</h1>
       <h1 className="subtitle">Below are some of my favorite projects that <br/> I've been working on!</h1>
       <div className="projects-grid">
         {projectList.map((project, index) => (
