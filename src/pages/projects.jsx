@@ -2,26 +2,23 @@
 import "./projects.css";
 
 const projectList = [
-  { icon: "./React-Logo.png", title: "This Website!", subtitle: "My personal portfolio.", link: "/" },
+  { icon: "./React-Logo.png", title: "This Website", subtitle: "My personal portfolio.", link: "/" },
   { icon: "./AE-Logo.png", title: "Video Editing", subtitle: "Editing videos in Adobe After Effects and Premiere Pro.", link: "/" },
-  { icon: "./unity-logo.png", title: "Game Dev", subtitle: "Unity projects", link: "/" },
+  { icon: "./unity-logo.png", title: "Game Development", subtitle: "Unity projects", link: "/" },
   { icon: "./PS-Logo.png", title: "Designs", subtitle: "UI/UX posters in Adobe Photoshop", link: "/" },
-  { icon: "🛸", title: "Drone Sim", subtitle: "A drone strategy game", link: "/" },
-  { icon: "⚡", title: "Echo Runner", subtitle: "Fast-paced puzzle FPS", link: "/" },
-  { icon: "🏙️", title: "Skyscraper", subtitle: "Construction sim game", link: "/" },
-  { icon: "🌆", title: "Urban Survivalist", subtitle: "City-based survival RPG", link: "/" },
-  { icon: "🌀", title: "Gravity Shift", subtitle: "Arena shooter idea", link: "/" },
-  { icon: "🎒", title: "Inventory UI", subtitle: "Classic RPG-style UI", link: "/" },
-  { icon: "🔫", title: "Reload Animation", subtitle: "Custom weapon reload", link: "/" },
-  { icon: "🌍", title: "3D Earth", subtitle: "Spinning globe in React", link: "/" },
+  { icon: "./blender-logo.png", title: "3D Modeling", subtitle: "I like making 3D Models on blender sometimes", link: "/" },
+  { icon: "", title: "empty", subtitle: "", link: "/" },
+  { icon: "", title: "empty", subtitle: "empty", link: "/" },
+  { icon: "", title: "empty", subtitle: "empty", link: "/" },
+  { icon: "", title: "empty", subtitle: "empty", link: "/" },
 ];
 
 
 const Projects = () => {
   return (
     <div>
-      <h1 className="titles">My Projects</h1>
-      <h1 className="subtitle">Below are some of my favorite projects that <br/> I've been working on!</h1>
+      <h1 className="titles">Hobbys/projects</h1>
+      <h1 className="subtitle">Below are some of the projects/hobbys that <br/> I enjoy working on</h1>
       <div className="projects-grid">
         {projectList.map((project, index) => (
           <a href={project.link} className="card-button" key={index}>

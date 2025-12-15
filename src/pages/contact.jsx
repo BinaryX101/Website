@@ -18,7 +18,7 @@ const Contact = () => {
         </div>
 
         <form className="contactForm"> {/*Need to move this upwards a bit to line up with the title*/} 
-          <h2>Not Currently Working Please Ignore</h2>
+          <h2>Doesnt Currently Work Please Ignore</h2>
           <label>Name</label>
           <input type="text" placeholder="e.g. John Smith" required />
 
